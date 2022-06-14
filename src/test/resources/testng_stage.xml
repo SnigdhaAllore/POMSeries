@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Noon Payments Automation Test Suite : Regression">
+  <listeners>
+    <listener class-name="com.noonpayment.listener.ExtentReportListener" />
+  </listeners>
+
+  <parameter name="environment" value="stage" />
+  <test name="Noon Payments Automation Test Cases : Regression" >
+    <classes>
+     <class name="com.noonpayment.testcases.PaymentLinkTest"></class>
+      <class name="com.noonpayment.testcases.VirtualTerminalTest"></class>
+      <class name="com.noonpayment.testcases.LiabilityShift3DTest"></class>
+      <class name="com.noonpayment.testcases.FullySecure3DTest"></class>
+      <class name="com.noonpayment.testcases.CheckOutPageInArabicTest"></class>
+      <class name="com.noonpayment.testcases.Checkout3DScenariosTest"></class>
+      <class name="com.noonpayment.testcases.SavedCardsTest"></class>
+      <class name="com.noonpayment.testcases.OffersTest"></class>
+      <class name="com.noonpayment.testcases.ProductCatalogTest"></class>
+      <class name="com.noonpayment.testcases.Checkout3DS2ScenariosTest"></class>
+      <class name="com.noonpayment.testcases.JSSDKTest"></class>
+    </classes>
+  </test>
+
+</suite>
